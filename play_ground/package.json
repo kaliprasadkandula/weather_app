@@ -1,0 +1,12 @@
+{
+  "name": "play_ground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "temp2.js",
+  "scripts": {
+    "start":"node ./temp/weather_app.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
+

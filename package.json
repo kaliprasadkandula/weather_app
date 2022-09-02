@@ -1,0 +1,19 @@
+{
+  "name": "my_weather_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./play_ground/temp/weather_app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaliprasadkandula/weather_app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kaliprasadkandula/weather_app/issues"
+  },
+  "homepage": "https://github.com/kaliprasadkandula/weather_app#readme"
+}

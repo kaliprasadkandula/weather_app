@@ -4,7 +4,7 @@ const express=require('express') //express is used for setting up web pages live
 const weather_app=require('../../weather_app/app.js')
 //const { hasSubscribers } = require('diagnostics_channel')
 const app=express() 
-
+const port=process.env.PORT||3000
 
 const directorypath=path.join(__dirname,'../')// the two .. is for moving one step back and then mving to src directory(the directory path has to be at top most)
 const viewspath=path.join(__dirname,'../templates/views')
@@ -65,7 +65,7 @@ app.get('*',(req,resp)=>{     //wildcard /error  page(should be placed at last o
      resp.send('ERROR 404')
 })
 
-const port=3000
+//const port=3000
 app.listen(port,()=>{  //we are making our app listen the requests coming at this port
      console.log('server is up at '+port)
 })
