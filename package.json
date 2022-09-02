@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/kaliprasadkandula/weather_app/issues"
   },
-  "homepage": "https://github.com/kaliprasadkandula/weather_app#readme"
+  "homepage": "https://github.com/kaliprasadkandula/weather_app#readme",
+  "dependencies": {
+    "hbs": "^4.2.0"
+  }
 }

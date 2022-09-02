@@ -31,7 +31,7 @@ app.get('/weather',(req,resp)=>{
      //weather page
      if(!req.query.address)
      {
-          return resp.send({error:'address required'})
+          return resp.send({error:'address required'}) 
      }
      weather_app.getWeather(req.query.address,({data,err})=>
      {
