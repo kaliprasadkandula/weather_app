@@ -9,7 +9,7 @@ form.addEventListener('submit',(event)=> //see here the submit is given in strin
    
     event.preventDefault()
     console.log(city.value)
-    fetch('http://localhost:3000/weather?address='+city.value).then((response)=>{
+    fetch('/weather?address='+city.value).then((response)=>{ 
         response.json().then((output)=>{ //note this line
             if(output.error)
             {
