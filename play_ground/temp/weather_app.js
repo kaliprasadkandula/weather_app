@@ -9,12 +9,14 @@ const port=process.env.PORT||3000
 const directorypath=path.join(__dirname,'../')// the two .. is for moving one step back and then mving to src directory(the directory path has to be at top most)
 const viewspath=path.join(__dirname,'../templates/views')
 const partialsspath=path.join(__dirname,'../templates/partials')
-
+console.log(directorypath)
+console.log(viewspath)
+console.log(partialsspath)
 app.set('view engine','hbs') //now view engine is changed from html to hbs
 app.set('views',viewspath)// this is important because we have to tell express explicitly the location of views
 hbs.registerPartials(partialsspath) 
 
-console.log(directorypath)
+
 app.use(express.static(directorypath))//telling the location of all web pages
 
 
